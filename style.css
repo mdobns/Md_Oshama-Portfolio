@@ -6,8 +6,14 @@ body{
 h1{
     font-size: 50px;
 }
+h2{
+    font-size: 40px;
+}
+p{
+    color: dimgray;
+}
 .name-c{
-    color: orange;
+    color: rgb(0, 81, 255);
 }
 .half-width{
     width: 40%;    
@@ -24,12 +30,32 @@ h1{
 }
 section{
     height: 500px;
+    padding-bottom: 150px;
 }
 .link-button{
     text-decoration: none;
-    background-image: linear-gradient(45deg, lightsalmon, tomato);
-    padding: 10px 30px;
-    border-radius: 10px;
+    background-image: linear-gradient(45deg, #1877F2 , #0077B5);
+    padding: 12px 30px;
+    border-radius: 5px;
     color: white;
     font-weight: 700;
+}
+.mid-banner{
+    background-image: url("images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.p-c{
+    color: chocolate;
+}
+.single{
+    box-shadow: 10px 10px 40px grey;
+    border-radius: 5px;
+    height: 80%
+    ;
+}
+.experience-area{
+    background-image: url("images/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
 }
