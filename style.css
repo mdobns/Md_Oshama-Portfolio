@@ -59,3 +59,16 @@ section{
     background-repeat: no-repeat;
     background-position: left;
 }
+#full-stack{
+    background-color: white;
+    border-left: 7px solid ;
+    border-image: linear-gradient(180deg, lightsalmon, tomato) 1;
+}
+#baby-web{
+    border-left: 7px solid ;
+    border-image: linear-gradient(180deg, blue , cyan) 1;
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+}
