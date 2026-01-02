@@ -68,7 +68,64 @@ section{
     border-left: 7px solid ;
     border-image: linear-gradient(180deg, blue , cyan) 1;
 }
+.projects-area{
+    background-color: #f8f9fa;
+    padding: 50px 5%;
+    height: auto;
+    min-height: 500px;
+}
+.projects-area h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    clear: both;
+}
+.project-card{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.project-card h3{
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-tech{
+    color: #1877F2;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.project-card p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.project-card .link-button{
+    display: inline-block;
+    font-size: 12px;
+    padding: 10px 20px;
+}
 footer{
     text-align: center;
     font-size: 12px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+footer p{
+    color: white;
+    margin: 0;
 }
