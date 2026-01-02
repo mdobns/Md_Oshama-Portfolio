@@ -6,87 +6,65 @@
     <meta name="description" content="Md. Oshama Bin Nur - Backend Developer specializing in FastAPI, Django, and Flask. Building scalable APIs and web applications.">
     <link rel="icon" href="images/oshama.ico">
     <title>Md. Oshama Bin Nur | Backend Developer - FastAPI & Django</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'inter': ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <style>
-        html { scroll-behavior: smooth; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-inter bg-gray-50">
+<body>
     <!-- Header Navigation -->
-    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Oshama</a>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="logo">Oshama</a>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" class="btn-primary">Hire Me</a>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
-                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Experience</a>
-                    <a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Projects</a>
-                    <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-5 py-2 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all">Hire Me</a>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
-            <!-- Mobile menu -->
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col space-y-3">
-                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
-                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Experience</a>
-                    <a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Projects</a>
-                    <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-5 py-2 rounded-full font-semibold text-center">Hire Me</a>
-                </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" class="btn-primary">Hire Me</a>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen pt-16 bg-gradient-to-br from-white via-blue-50 to-indigo-100 flex items-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1">
-                    <p class="text-blue-600 font-semibold text-lg mb-2">Hello, I'm</p>
-                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-                        Md. Oshama <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Bin Nur</span>
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <p class="hero-subtitle">Hello, I'm</p>
+                    <h1 class="hero-title">
+                        Md. Oshama <span class="gradient-text">Bin Nur</span>
                     </h1>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">Backend Developer | FastAPI & Django Specialist</h2>
-                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">I build robust, scalable backend systems and RESTful APIs using Python frameworks like FastAPI, Django, and Flask. From database design to API architecture, I deliver efficient server-side solutions that power modern web applications.</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all inline-flex items-center gap-2">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    <h2 class="hero-role">Backend Developer | FastAPI & Django Specialist</h2>
+                    <p class="hero-description">I build robust, scalable backend systems and RESTful APIs using Python frameworks like FastAPI, Django, and Flask. From database design to API architecture, I deliver efficient server-side solutions that power modern web applications.</p>
+                    <div class="hero-buttons">
+                        <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" class="btn-primary">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                             Hire Me
                         </a>
-                        <a href="https://github.com/mdobns" target="_blank" class="border-2 border-gray-800 text-gray-800 px-8 py-3 rounded-full font-semibold hover:bg-gray-800 hover:text-white transition-all inline-flex items-center gap-2">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <a href="https://github.com/mdobns" target="_blank" class="btn-outline">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                             GitHub
                         </a>
                     </div>
                 </div>
-                <div class="order-1 md:order-2 flex justify-center">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur-3xl opacity-20 scale-110"></div>
-                        <img src="images/Oshama.png" alt="Md. Oshama Bin Nur" class="relative w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-4 border-white shadow-2xl">
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-bg"></div>
+                        <img src="images/Oshama.png" alt="Md. Oshama Bin Nur" class="hero-image">
                     </div>
                 </div>
             </div>
@@ -94,36 +72,34 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="flex justify-center">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl blur-3xl opacity-20 scale-105"></div>
-                        <img src="images/Oshama2.png" alt="Md. Oshama Bin Nur" class="relative w-80 h-80 object-cover rounded-3xl shadow-2xl">
-                    </div>
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image-bg"></div>
+                    <img src="images/Oshama2.png" alt="Md. Oshama Bin Nur" class="about-image">
                 </div>
                 <div>
-                    <p class="text-blue-600 font-semibold text-lg mb-2">About Me</p>
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Backend Engineering Excellence</h2>
-                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">I specialize in building high-performance APIs and backend systems. My expertise includes FastAPI for modern async APIs, Django for full-featured web applications, and Flask for lightweight microservices.</p>
-                    <div class="grid grid-cols-2 gap-4 mb-8">
-                        <div class="bg-gray-50 p-4 rounded-xl">
-                            <h4 class="font-bold text-gray-900">1+</h4>
-                            <p class="text-gray-600 text-sm">Years Experience</p>
+                    <p class="about-subtitle">About Me</p>
+                    <h2 class="about-title">Backend Engineering Excellence</h2>
+                    <p class="about-description">I specialize in building high-performance APIs and backend systems. My expertise includes FastAPI for modern async APIs, Django for full-featured web applications, and Flask for lightweight microservices.</p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h4>1+</h4>
+                            <p>Years Experience</p>
                         </div>
-                        <div class="bg-gray-50 p-4 rounded-xl">
-                            <h4 class="font-bold text-gray-900">5+</h4>
-                            <p class="text-gray-600 text-sm">Projects Completed</p>
+                        <div class="stat-card">
+                            <h4>5+</h4>
+                            <p>Projects Completed</p>
                         </div>
                     </div>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full font-medium text-sm">FastAPI</span>
-                        <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full font-medium text-sm">Django</span>
-                        <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-medium text-sm">Flask</span>
-                        <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full font-medium text-sm">Python</span>
-                        <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full font-medium text-sm">PostgreSQL</span>
-                        <span class="px-4 py-2 bg-red-100 text-red-700 rounded-full font-medium text-sm">REST APIs</span>
+                    <div class="skills-container">
+                        <span class="skill-tag green">FastAPI</span>
+                        <span class="skill-tag green">Django</span>
+                        <span class="skill-tag blue">Flask</span>
+                        <span class="skill-tag yellow">Python</span>
+                        <span class="skill-tag purple">PostgreSQL</span>
+                        <span class="skill-tag red">REST APIs</span>
                     </div>
                 </div>
             </div>
@@ -131,131 +107,131 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <p class="text-blue-600 font-semibold text-lg mb-2">My Journey</p>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Experience</h2>
+    <section id="experience" class="experience-section">
+        <div class="experience-container">
+            <div class="section-header">
+                <p class="section-subtitle">My Journey</p>
+                <h2 class="section-title">Experience</h2>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-600">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                             </svg>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900">Backend Developer</h3>
-                            <p class="text-blue-600 font-medium">FastAPI & Django Expert</p>
+                        <div class="experience-info">
+                            <h3>Backend Developer</h3>
+                            <p>FastAPI & Django Expert</p>
                         </div>
                     </div>
-                    <p class="text-orange-500 font-semibold mb-4">2024 - 2025 | 1 Year Experience</p>
-                    <p class="text-gray-600 leading-relaxed">I specialize in building RESTful APIs with FastAPI featuring async/await patterns, automatic OpenAPI documentation, and high performance. I also develop full-stack applications with Django, including authentication, ORM, and admin interfaces. Experienced with database design, API security, and deployment.</p>
+                    <p class="experience-date">2024 - 2025 | 1 Year Experience</p>
+                    <p class="experience-description">I specialize in building RESTful APIs with FastAPI featuring async/await patterns, automatic OpenAPI documentation, and high performance. I also develop full-stack applications with Django, including authentication, ORM, and admin interfaces. Experienced with database design, API security, and deployment.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-indigo-600">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
-                            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="experience-card indigo">
+                    <div class="experience-header">
+                        <div class="experience-icon indigo">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                             </svg>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900">Python Developer</h3>
-                            <p class="text-indigo-600 font-medium">Learning Backend Development</p>
+                        <div class="experience-info">
+                            <h3>Python Developer</h3>
+                            <p class="indigo">Learning Backend Development</p>
                         </div>
                     </div>
-                    <p class="text-orange-500 font-semibold mb-4">2022 - 2023</p>
-                    <p class="text-gray-600 leading-relaxed">Started my journey with Python and Flask. Learned the fundamentals of web development, REST APIs, database management, and server-side programming. Built foundational projects to understand backend architecture.</p>
+                    <p class="experience-date">2022 - 2023</p>
+                    <p class="experience-description">Started my journey with Python and Flask. Learned the fundamentals of web development, REST APIs, database management, and server-side programming. Built foundational projects to understand backend architecture.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <p class="text-blue-600 font-semibold text-lg mb-2">My Work</p>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Featured Projects</h2>
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            <div class="section-header">
+                <p class="section-subtitle">My Work</p>
+                <h2 class="section-title">Featured Projects</h2>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                    <div class="h-2 bg-gradient-to-r from-green-500 to-emerald-500"></div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">FastAPI</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-semibold">Next.js</span>
+                <div class="project-card">
+                    <div class="project-bar green"></div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag green">FastAPI</span>
+                            <span class="project-tag gray">Next.js</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Meeting Scheduler</h3>
-                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">A full-stack meeting scheduling application with FastAPI backend. Features include scheduling meetings, managing participants, conflict detection, and calendar export.</p>
-                        <a href="https://github.com/mdobns/Meeting-Scheduler" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        <h3 class="project-title">Meeting Scheduler</h3>
+                        <p class="project-description">A full-stack meeting scheduling application with FastAPI backend. Features include scheduling meetings, managing participants, conflict detection, and calendar export.</p>
+                        <a href="https://github.com/mdobns/Meeting-Scheduler" target="_blank" class="project-link">
                             View Project
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                    <div class="h-2 bg-gradient-to-r from-green-600 to-teal-500"></div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Django</span>
-                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-semibold">Vue.js 3</span>
+                <div class="project-card">
+                    <div class="project-bar teal"></div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag green">Django</span>
+                            <span class="project-tag emerald">Vue.js 3</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">E-Commerce WebApp</h3>
-                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">A full-stack AI-powered eCommerce web application built with Django backend and Vue.js 3 frontend. Features product management, user authentication, and shopping cart.</p>
-                        <a href="https://github.com/mdobns/ecommerce-webapp-django-vue3" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        <h3 class="project-title">E-Commerce WebApp</h3>
+                        <p class="project-description">A full-stack AI-powered eCommerce web application built with Django backend and Vue.js 3 frontend. Features product management, user authentication, and shopping cart.</p>
+                        <a href="https://github.com/mdobns/ecommerce-webapp-django-vue3" target="_blank" class="project-link">
                             View Project
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
                     </div>
                 </div>
                 <!-- Project 3 -->
-                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                    <div class="h-2 bg-gradient-to-r from-green-600 to-lime-500"></div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Django</span>
+                <div class="project-card">
+                    <div class="project-bar lime"></div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag green">Django</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Blog Application</h3>
-                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">A blog application built with Django featuring post creation, user management, and content management system capabilities.</p>
-                        <a href="https://github.com/mdobns/blogg" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        <h3 class="project-title">Blog Application</h3>
+                        <p class="project-description">A blog application built with Django featuring post creation, user management, and content management system capabilities.</p>
+                        <a href="https://github.com/mdobns/blogg" target="_blank" class="project-link">
                             View Project
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
                     </div>
                 </div>
                 <!-- Project 4 -->
-                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                    <div class="h-2 bg-gradient-to-r from-blue-500 to-cyan-500"></div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">Flask</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">IBM Watson</span>
+                <div class="project-card">
+                    <div class="project-bar blue"></div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag blue">Flask</span>
+                            <span class="project-tag purple">IBM Watson</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Sentiment Analysis</h3>
-                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">Flask-based sentiment analysis application using IBM Watson NLP. Analyzes text to determine emotional tone and sentiment polarity.</p>
-                        <a href="https://github.com/mdobns/Sentiment-Analysis-with-Flask" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        <h3 class="project-title">Sentiment Analysis</h3>
+                        <p class="project-description">Flask-based sentiment analysis application using IBM Watson NLP. Analyzes text to determine emotional tone and sentiment polarity.</p>
+                        <a href="https://github.com/mdobns/Sentiment-Analysis-with-Flask" target="_blank" class="project-link">
                             View Project
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
                     </div>
                 </div>
                 <!-- Project 5 -->
-                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                    <div class="h-2 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">Flask</span>
-                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-semibold">Vue.js</span>
+                <div class="project-card">
+                    <div class="project-bar indigo"></div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag blue">Flask</span>
+                            <span class="project-tag emerald">Vue.js</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Grocery Management</h3>
-                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">A grocery management system with Flask backend API and Vue.js frontend. Manage inventory, track products, and handle orders efficiently.</p>
-                        <a href="https://github.com/mdobns/Grocerry-Management-" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        <h3 class="project-title">Grocery Management</h3>
+                        <p class="project-description">A grocery management system with Flask backend API and Vue.js frontend. Manage inventory, track products, and handle orders efficiently.</p>
+                        <a href="https://github.com/mdobns/Grocerry-Management-" target="_blank" class="project-link">
                             View Project
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -264,27 +240,27 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <a href="#" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Oshama</a>
-                    <p class="text-gray-400 mt-2">Backend Developer | FastAPI & Django Specialist</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Oshama</a>
+                    <p>Backend Developer | FastAPI & Django Specialist</p>
                 </div>
-                <div class="flex items-center gap-6">
-                    <a href="https://github.com/mdobns" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <div class="social-links">
+                    <a href="https://github.com/mdobns" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                     </a>
-                    <a href="https://fb.com/mdobns" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    <a href="https://fb.com/mdobns" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     </a>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2026 Md. Oshama Bin Nur | Backend Developer | All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Md. Oshama Bin Nur | Backend Developer | All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -295,7 +271,7 @@
         const mobileMenu = document.getElementById('mobile-menu');
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('active');
             });
         }
     </script>
