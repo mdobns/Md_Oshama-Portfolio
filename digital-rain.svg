@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="480" viewBox="0 0 360 480">
+  <defs>
+    <linearGradient id="trail" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#16a34a" stop-opacity="0"/>
+      <stop offset=".4" stop-color="#22c55e" stop-opacity=".5"/>
+      <stop offset=".85" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#d9ffe7"/>
+    </linearGradient>
+  </defs>
+  <g font-family="monospace" font-size="15" text-anchor="middle" fill="url(#trail)">
+    <text x="18" y="-12"><tspan x="18" dy="20">0</tspan><tspan x="18" dy="20">1</tspan><tspan x="18" dy="20">{</tspan><tspan x="18" dy="20">F</tspan><tspan x="18" dy="20">7</tspan><tspan x="18" dy="20">A</tspan><tspan x="18" dy="20">}</tspan><tspan x="18" dy="20">0</tspan><tspan x="18" dy="20">1</tspan></text>
+    <text x="58" y="184"><tspan x="58" dy="20">/</tspan><tspan x="58" dy="20">0</tspan><tspan x="58" dy="20">x</tspan><tspan x="58" dy="20">9</tspan><tspan x="58" dy="20">;</tspan><tspan x="58" dy="20">1</tspan><tspan x="58" dy="20">B</tspan><tspan x="58" dy="20">8</tspan><tspan x="58" dy="20">0</tspan><tspan x="58" dy="20">&gt;</tspan></text>
+    <text x="98" y="68"><tspan x="98" dy="20">1</tspan><tspan x="98" dy="20">0</tspan><tspan x="98" dy="20">[</tspan><tspan x="98" dy="20">C</tspan><tspan x="98" dy="20">4</tspan><tspan x="98" dy="20">]</tspan></text>
+    <text x="138" y="224"><tspan x="138" dy="20">0</tspan><tspan x="138" dy="20">1</tspan><tspan x="138" dy="20">=</tspan><tspan x="138" dy="20">A</tspan><tspan x="138" dy="20">2</tspan><tspan x="138" dy="20">F</tspan><tspan x="138" dy="20">0</tspan><tspan x="138" dy="20">:</tspan><tspan x="138" dy="20">1</tspan><tspan x="138" dy="20">7</tspan></text>
+    <text x="178" y="24"><tspan x="178" dy="20">&lt;</tspan><tspan x="178" dy="20">1</tspan><tspan x="178" dy="20">0</tspan><tspan x="178" dy="20">/</tspan><tspan x="178" dy="20">D</tspan><tspan x="178" dy="20">3</tspan><tspan x="178" dy="20">9</tspan><tspan x="178" dy="20">&gt;</tspan><tspan x="178" dy="20">1</tspan><tspan x="178" dy="20">0</tspan></text>
+    <text x="218" y="284"><tspan x="218" dy="20">B</tspan><tspan x="218" dy="20">0</tspan><tspan x="218" dy="20">1</tspan><tspan x="218" dy="20">7</tspan><tspan x="218" dy="20">{</tspan><tspan x="218" dy="20">}</tspan><tspan x="218" dy="20">;</tspan></text>
+    <text x="258" y="124"><tspan x="258" dy="20">1</tspan><tspan x="258" dy="20">E</tspan><tspan x="258" dy="20">0</tspan><tspan x="258" dy="20">4</tspan><tspan x="258" dy="20">/</tspan><tspan x="258" dy="20">1</tspan><tspan x="258" dy="20">&gt;</tspan><tspan x="258" dy="20">0</tspan></text>
+    <text x="298" y="-8"><tspan x="298" dy="20">[</tspan><tspan x="298" dy="20">0</tspan><tspan x="298" dy="20">1</tspan><tspan x="298" dy="20">]</tspan><tspan x="298" dy="20">9</tspan><tspan x="298" dy="20">F</tspan></text>
+    <text x="338" y="244"><tspan x="338" dy="20">0</tspan><tspan x="338" dy="20">x</tspan><tspan x="338" dy="20">A</tspan><tspan x="338" dy="20">1</tspan><tspan x="338" dy="20">0</tspan><tspan x="338" dy="20">;</tspan><tspan x="338" dy="20">7</tspan><tspan x="338" dy="20">1</tspan><tspan x="338" dy="20">0</tspan></text>
+  </g>
+</svg>

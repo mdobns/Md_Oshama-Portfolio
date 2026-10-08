@@ -1,0 +1,251 @@
+/* Self-contained so the terminal also works without the Tailwind CDN. */
+/* Hidden background palettes keep existing dark text and cards readable. */
+body[data-page-theme="aurora"] {
+    --nav-text: #123d32;
+    --nav-muted: #315c50;
+    --nav-accent: #08664c;
+    --nav-border: #b3d9ca;
+    --nav-hover: #dcf5e9;
+    --nav-button-text: #ffffff;
+    --page-base: #f0fdf7;
+    --page-glow-a: #c5f4e1;
+    --page-glow-b: #e6ddff;
+    --page-grid: transparent;
+}
+body[data-page-theme="sunset"] {
+    --nav-text: #512b26;
+    --nav-muted: #78453a;
+    --nav-accent: #9a3412;
+    --nav-border: #efcdbb;
+    --nav-hover: #ffe4d5;
+    --nav-button-text: #ffffff;
+    --page-base: #fff8ef;
+    --page-glow-a: #ffe0bd;
+    --page-glow-b: #fbd6e8;
+    --page-grid: transparent;
+}
+body[data-page-theme="blueprint"] {
+    --nav-text: #132c51;
+    --nav-muted: #3a5579;
+    --nav-accent: #1d4ed8;
+    --nav-border: #bed3ed;
+    --nav-hover: #dbeafe;
+    --nav-button-text: #ffffff;
+    --page-base: #f0f7ff;
+    --page-glow-a: #dbeafe;
+    --page-glow-b: #e0e7ff;
+    --page-grid: #2563eb12;
+}
+body[data-page-theme="rain"] {
+    --nav-text: #e0f7e8;
+    --nav-muted: #b0cdbb;
+    --nav-accent: #67ec95;
+    --nav-border: #28523a;
+    --nav-hover: #112f1e;
+    --nav-button-text: #020905;
+    --page-base: #020905;
+    --page-glow-a: #062015;
+    --page-glow-b: #021009;
+    --page-grid: transparent;
+}
+body[data-page-theme] { background-color: var(--page-base); }
+body[data-page-theme] > header {
+    background-color: var(--page-base);
+    background-image: linear-gradient(110deg, var(--page-base), var(--page-glow-a));
+    border-color: var(--nav-border);
+    color: var(--nav-text);
+}
+body[data-page-theme] #mobile-menu {
+    background-color: var(--page-base);
+    border-color: var(--nav-border);
+}
+body[data-page-theme] > header :is(.text-slate-600, .text-slate-700) { color: var(--nav-muted); }
+body[data-page-theme] > header .text-ink { color: var(--nav-text); }
+body[data-page-theme] > header .text-blue-600 { color: var(--nav-accent); }
+body[data-page-theme] > header a:not(.bg-ink):is(:hover, :focus-visible) { color: var(--nav-accent); }
+body[data-page-theme] #mobile-menu-button { color: var(--nav-text); }
+body[data-page-theme] #mobile-menu-button:is(:hover, :focus-visible),
+body[data-page-theme] #mobile-menu a:not(.bg-ink):is(:hover, :focus-visible) {
+    background-color: var(--nav-hover);
+}
+body[data-page-theme] > header .bg-ink {
+    background-color: var(--nav-accent);
+    color: var(--nav-button-text);
+}
+body[data-page-theme] > header .bg-ink:is(:hover, :focus-visible) {
+    background-color: var(--nav-text);
+    color: var(--page-base);
+}
+body[data-page-theme] > header :focus-visible {
+    outline: 2px solid var(--nav-accent);
+    outline-offset: 3px;
+}
+body[data-page-theme] main > section:not(#experience) {
+    background-color: var(--page-base);
+    background-image:
+        linear-gradient(var(--page-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--page-grid) 1px, transparent 1px),
+        radial-gradient(ellipse at top left, var(--page-glow-a), transparent 65%),
+        radial-gradient(ellipse at bottom right, var(--page-glow-b), transparent 65%);
+    background-size: 32px 32px, 32px 32px, 100% 100%, 100% 100%;
+}
+body[data-page-theme] main > section:nth-child(even):not(#experience) {
+    background-image:
+        linear-gradient(var(--page-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--page-grid) 1px, transparent 1px),
+        radial-gradient(ellipse at bottom left, var(--page-glow-b), transparent 65%),
+        radial-gradient(ellipse at top right, var(--page-glow-a), transparent 65%);
+}
+/* Digital character streams repeat every 480px for a seamless loop. */
+body[data-page-theme="rain"] main > section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: #020905;
+}
+body[data-page-theme="rain"] main :is(.bg-white, .bg-slate-50, .bg-slate-900) {
+    background-color: #091a11;
+}
+body[data-page-theme="rain"] main :is(.text-ink, .text-slate-900, .text-slate-800, .text-slate-700) {
+    color: #e0f7e8;
+}
+body[data-page-theme="rain"] main :is(.text-slate-600, .text-slate-500) {
+    color: #b0cdbb;
+}
+body[data-page-theme="rain"] main .text-blue-600 { color: #67ec95; }
+body[data-page-theme="rain"] main :is(.border-slate-200, .border-slate-300) { border-color: #28523a; }
+body[data-page-theme="rain"] .connector-flow {
+    --connector-track: #45e68040;
+    --connector-node: #67ec95;
+}
+body[data-page-theme="rain"] main > section > div {
+    position: relative;
+    z-index: 1;
+}
+body[data-page-theme="rain"] main > section::before,
+body[data-page-theme="rain"] main > section::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 -480px;
+    z-index: 0;
+    pointer-events: none;
+    background-image: url("digital-rain.svg");
+    background-size: 360px 480px;
+    background-repeat: repeat;
+    opacity: .48;
+    animation: portfolio-rain 5s linear infinite;
+}
+body[data-page-theme="rain"] main > section::after {
+    background-position: 173px 127px;
+    opacity: .2;
+    animation-duration: 9s;
+    animation-delay: -4s;
+}
+@keyframes portfolio-rain {
+    from { transform: translateY(-480px); }
+    to { transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+    body[data-page-theme="rain"] main > section::before,
+    body[data-page-theme="rain"] main > section::after {
+        animation: none;
+    }
+}
+.dev-launcher {
+    color: #93c5fd;
+    background: #17233b;
+    border: 1px solid #475569;
+    border-radius: .65rem;
+    min-width: 44px;
+    min-height: 44px;
+    font: 700 1rem ui-monospace, monospace;
+    cursor: pointer;
+}
+.dev-launcher[hidden] { display: none; }
+.dev-launcher:hover { background: #1e3a5f; }
+.dev-terminal {
+    box-sizing: border-box;
+    width: min(680px, calc(100% - 24px));
+    max-height: 90vh;
+    max-height: 90dvh;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #35383e;
+    border-radius: 8px;
+    color: #d4d4d4;
+    background: #111214;
+    box-shadow: 0 24px 80px #0008;
+    font: 14px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+.dev-terminal::backdrop { background: #020617bf; }
+.dev-terminal[open] { animation: terminal-appear 160ms ease-out; }
+.terminal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 0 0 16px;
+    border-bottom: 1px solid #35383e;
+    background: #222428;
+}
+.terminal-header h2 { margin: 0; font: inherit; font-size: 12px; color: #b7bac0; }
+.terminal-close {
+    font: inherit;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #e2e8f0;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 8px 12px;
+}
+.terminal-close { flex-shrink: 0; }
+.terminal-close:hover { background: #b52b35; }
+.terminal-screen {
+    height: 380px;
+    height: clamp(140px, 55dvh, 420px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 16px;
+    overflow-wrap: anywhere;
+}
+.terminal-output p { margin: 0 0 1em; white-space: pre-wrap; }
+.terminal-output .terminal-echo { color: #88c779; margin-bottom: 0; }
+.terminal-output { min-width: 0; }
+.terminal-output a { color: #93c5fd; text-decoration: underline; text-underline-offset: 3px; }
+.terminal-form { display: flex; align-items: baseline; gap: 1ch; margin: 0; padding: 0; border: 0; }
+.terminal-prompt { color: #88c779; flex-shrink: 0; white-space: nowrap; }
+.terminal-path { color: #8ab4f8; }
+.terminal-form input {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    min-height: 1.6em;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: #f8fafc;
+    background: transparent;
+    font: inherit;
+    caret-color: #d4d4d4;
+    appearance: none;
+    box-shadow: none;
+}
+.dev-launcher:focus-visible, .dev-terminal :focus-visible { outline: 2px solid #93c5fd; outline-offset: 3px; }
+.dev-terminal .terminal-form input:focus { outline: none; box-shadow: none; }
+.terminal-form:focus-within .terminal-prompt { color: #afff96; }
+.terminal-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@keyframes terminal-appear {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 640px) {
+    .dev-terminal { font-size: 16px; }
+    .terminal-screen { padding: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .dev-terminal[open] { animation: none; }
+}
