@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-    <url>
-        <loc>https://mdobns.github.io/Md_Oshama-Portfolio/</loc>
-        <lastmod>2026-10-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://mdobns.github.io/Md_Oshama-Portfolio/images/Oshama.webp</image:loc>
-            <image:title>Md. Oshama Bin Nur - Software Engineer</image:title>
-            <image:caption>Portrait of Md. Oshama Bin Nur</image:caption>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://mdobns.github.io/Md_Oshama-Portfolio/Md_Oshama_Bin_Nur_Resume.pdf</loc>
-        <lastmod>2026-10-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mdobns.github.io/Md_Oshama-Portfolio/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
