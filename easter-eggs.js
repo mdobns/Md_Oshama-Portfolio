@@ -94,15 +94,19 @@
 
         switch (command) {
             case 'help':
-                print('whoami    Meet the developer\nstack     Tools of the trade\nprojects  Explore selected work\ncv        Get the résumé\ncontact   Start a conversation\nclear     Clear this terminal\nexit      Back to the portfolio\n\nHint: try sudo coffee.');
+                print('whoami        Meet the developer\nstack         Tools of the trade\nprojects      Explore selected work\narchitecture  View system architecture\ncv            Get the résumé\ncontact       Start a conversation\nclear         Clear this terminal\nexit          Back to the portfolio\n\nHint: try sudo coffee.');
                 break;
             case 'whoami':
-                print('Md. Oshama Bin Nur\nPython Developer at Alora Cloud · Dhaka, Bangladesh\nBuilding FastAPI backends, PostgreSQL systems, and AI-powered applications.');
+                print('Md. Oshama Bin Nur\nBackend & Mobile Engineer at Alora Cloud · Dhaka, Bangladesh\nBuilding scalable FastAPI backends, Flutter mobile apps, payment gateways, and AI systems.');
                 break;
             case 'stack':
-                print('Languages  Python / JavaScript / SQL / C\nBackend    FastAPI / Django / Flask\nData       PostgreSQL / MySQL / MongoDB / SQLAlchemy\nFrontend   Vue.js / Next.js\nAI         RAG / chatbots / recommendations\nTools      Git / Docker / MCP');
+                print('Languages   Python / Dart / JavaScript / SQL / C\nBackend     FastAPI / Django / Flask / PostgreSQL / Redis\nMobile      Flutter / FCM / Offline Sync (SQLite, Hive)\nFinTech     Paystation / bKash / SSLCommerz / Stripe\nMessaging   WhatsApp (Evolution API) / FCM / Email\nAI & Tools  Docker / Git / RAG / MCP');
+                break;
+            case 'architecture':
+                print('System Flow Architecture:\n[Flutter Client + Cache] <--> [FastAPI Core Engine]\n                                 ├── Paystation / bKash / Stripe\n                                 ├── WhatsApp (Evolution API)\n                                 ├── FCM Push Notifications\n                                 └── Email Fallback Queue');
                 break;
             case 'projects':
+                print('Paystation & Omnichannel Sync Engine — Flutter, Paystation, WhatsApp API, FCM.');
                 print('ShopSense — commerce, Django, Vue.js, and RAG.', '', { label: 'Source ↗', href: 'https://github.com/mdobns/ecommerce-webapp-django-vue3' });
                 print('Phone Scraper + RAG API — FastAPI and PostgreSQL.', '', { label: 'Source ↗', href: 'https://github.com/mdobns/gtr-assigment' });
                 print('See the project cards for more details.', '', { label: 'Explore projects →', href: '#projects' });

@@ -1,0 +1,20 @@
+# robots.txt for Md. Oshama Bin Nur Portfolio
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://mdobns.github.io/Md_Oshama-Portfolio/sitemap.xml
