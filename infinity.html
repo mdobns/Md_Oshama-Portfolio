@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#070b18">
     <title>Infinity View | Md. Oshama Bin Nur</title>
     <meta name="description" content="Explore Md. Oshama Bin Nur's software engineering portfolio as an immersive, infinitely looping story. Software Engineer specializing in scalable FastAPI backends, PostgreSQL, Flutter mobile applications, FinTech integrations, and Applied AI.">
@@ -19,6 +19,7 @@
     <meta property="og:image" content="https://mdobns.github.io/Md_Oshama-Portfolio/images/Oshama.webp">
 
     <link rel="icon" type="image/webp" href="images/github-avatar.webp">
+    <link rel="preload" as="image" href="images/Oshama.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet">
@@ -71,7 +72,7 @@
         <a class="exit-link" href="index.html">Standard view <span aria-hidden="true">↗</span></a>
     </header>
 
-    <main class="infinity" id="infinity" aria-live="polite">
+    <main class="infinity" id="infinity">
         <section class="scene scene--hero is-active" id="scene-1" data-label="Hello" data-accent="#6ee7ff" aria-hidden="false">
             <div class="scene__inner hero-layout">
                 <div class="hero-copy">
@@ -98,7 +99,7 @@
             </div>
         </section>
 
-        <section class="scene scene--statement" id="scene-2" data-label="Mindset" data-accent="#9f8cff" aria-hidden="true">
+        <section class="scene scene--statement" id="scene-2" data-label="Mindset" data-accent="#9f8cff" aria-hidden="true" inert>
             <div class="scene__inner statement-layout">
                 <p class="eyebrow reveal">02 / How I think</p>
                 <p class="statement reveal">Complexity should live <span>inside the system</span>, not in the user’s hands.</p>
@@ -113,7 +114,7 @@
             </div>
         </section>
 
-        <section class="scene scene--stack" id="scene-3" data-label="Toolkit" data-accent="#63f3c2" aria-hidden="true">
+        <section class="scene scene--stack" id="scene-3" data-label="Toolkit" data-accent="#63f3c2" aria-hidden="true" inert>
             <div class="scene__inner">
                 <div class="scene-heading reveal">
                     <p class="eyebrow">03 / The toolkit</p>
@@ -128,7 +129,7 @@
             </div>
         </section>
 
-        <section class="scene scene--experience" id="scene-4" data-label="Journey" data-accent="#ffcc66" aria-hidden="true">
+        <section class="scene scene--experience" id="scene-4" data-label="Journey" data-accent="#ffcc66" aria-hidden="true" inert>
             <div class="scene__inner experience-layout">
                 <div class="scene-heading reveal">
                     <p class="eyebrow">04 / Current chapter</p>
@@ -147,7 +148,7 @@
             </div>
         </section>
 
-        <section class="scene scene--project" id="scene-5" data-label="FinTech" data-accent="#58a6ff" aria-hidden="true">
+        <section class="scene scene--project" id="scene-5" data-label="FinTech" data-accent="#58a6ff" aria-hidden="true" inert>
             <div class="scene__inner project-layout">
                 <div class="project-copy">
                     <p class="eyebrow reveal">05 / Featured system</p>
@@ -169,11 +170,11 @@
             </div>
         </section>
 
-        <section class="scene scene--shopsense" id="scene-6" data-label="ShopSense" data-accent="#f881a8" aria-hidden="true">
+        <section class="scene scene--shopsense" id="scene-6" data-label="ShopSense" data-accent="#f881a8" aria-hidden="true" inert>
             <div class="scene__inner project-layout project-layout--reverse">
                 <div class="browser-stack reveal parallax-object parallax-object--strong" aria-hidden="true">
-                    <figure class="browser browser--back"><img src="images/ShopSense-Screenshots/Mobile Responsive.png" alt="" loading="lazy"></figure>
-                    <figure class="browser browser--front"><div class="browser__bar"><i></i><i></i><i></i></div><img src="images/ShopSense-Screenshots/Homepage.png" alt="" loading="lazy"></figure>
+                    <figure class="browser browser--back"><picture><source srcset="images/ShopSense-Screenshots/Mobile Responsive.webp" type="image/webp"><img src="images/ShopSense-Screenshots/Mobile Responsive.png" alt="" width="392" height="850" loading="lazy" decoding="async"></picture></figure>
+                    <figure class="browser browser--front"><div class="browser__bar"><i></i><i></i><i></i></div><picture><source srcset="images/ShopSense-Screenshots/Homepage.webp" type="image/webp"><img src="images/ShopSense-Screenshots/Homepage.png" alt="" width="1920" height="1080" loading="lazy" decoding="async"></picture></figure>
                 </div>
                 <div class="project-copy">
                     <p class="eyebrow reveal">06 / Featured product</p>
@@ -186,7 +187,7 @@
             </div>
         </section>
 
-        <section class="scene scene--research" id="scene-7" data-label="Research" data-accent="#b8ff6a" aria-hidden="true">
+        <section class="scene scene--research" id="scene-7" data-label="Research" data-accent="#b8ff6a" aria-hidden="true" inert>
             <div class="scene__inner research-layout">
                 <div class="research-art reveal parallax-object parallax-object--strong" aria-hidden="true">
                     <span class="network-node network-node--1"></span><span class="network-node network-node--2"></span><span class="network-node network-node--3"></span><span class="network-node network-node--4"></span><span class="network-node network-node--5"></span><span class="network-core">HHGSO</span>
@@ -202,7 +203,7 @@
             </div>
         </section>
 
-        <section class="scene scene--contact" id="scene-8" data-label="Connect" data-accent="#6ee7ff" aria-hidden="true">
+        <section class="scene scene--contact" id="scene-8" data-label="Connect" data-accent="#6ee7ff" aria-hidden="true" inert>
             <div class="scene__inner contact-layout">
                 <p class="eyebrow reveal">08 / Let’s build</p>
                 <h2 class="reveal">Have a difficult<br>problem? <em>Good.</em></h2>
@@ -225,6 +226,7 @@
     <div class="scroll-cue" aria-hidden="true"><span>Scroll to travel</span><i></i></div>
     <div class="scene-name" id="scene-name" aria-hidden="true">Hello</div>
     <div class="loop-signature" aria-hidden="true"><span>END</span><i>∞</i><span>BEGIN</span></div>
+    <p class="sr-only" id="scene-announcer" aria-live="polite" aria-atomic="true"></p>
 
     <noscript><p class="noscript">Infinity View needs JavaScript for scene navigation. <a href="index.html">Open the standard portfolio.</a></p></noscript>
     <script src="infinity.js"></script>
