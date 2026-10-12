@@ -78,11 +78,6 @@
 
     window.addEventListener('wheel', (event) => {
         if (Math.abs(event.deltaY) < 22 || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
-        const activeScene = scenes[current];
-        const canScrollInside = activeScene.scrollHeight > activeScene.clientHeight + 2;
-        const movingDownInside = event.deltaY > 0 && activeScene.scrollTop + activeScene.clientHeight < activeScene.scrollHeight - 2;
-        const movingUpInside = event.deltaY < 0 && activeScene.scrollTop > 2;
-        if (canScrollInside && (movingDownInside || movingUpInside)) return;
         event.preventDefault();
         step(event.deltaY > 0 ? 1 : -1);
     }, { passive: false });
@@ -95,11 +90,6 @@
     window.addEventListener('touchend', (event) => {
         const distanceY = touchStartY - event.changedTouches[0].clientY;
         const distanceX = touchStartX - event.changedTouches[0].clientX;
-        const activeScene = scenes[current];
-        const canScrollInside = activeScene.scrollHeight > activeScene.clientHeight + 2;
-        const movingDownInside = distanceY > 0 && activeScene.scrollTop + activeScene.clientHeight < activeScene.scrollHeight - 2;
-        const movingUpInside = distanceY < 0 && activeScene.scrollTop > 2;
-        if (canScrollInside && (movingDownInside || movingUpInside)) return;
         if (Math.abs(distanceY) > 45 && Math.abs(distanceY) > Math.abs(distanceX)) step(distanceY > 0 ? 1 : -1);
     }, { passive: true });
 
