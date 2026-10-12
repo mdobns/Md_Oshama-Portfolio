@@ -165,6 +165,12 @@
         root.style.setProperty('--mx-strong', `${(pointerX * 20).toFixed(2)}px`);
         root.style.setProperty('--my-strong', `${(pointerY * 15).toFixed(2)}px`);
 
+        // Calculate and set cursor-based origin for zoom effect (50% is center)
+        const originX = 50 + (pointerX * 100);
+        const originY = 50 + (pointerY * 100);
+        root.style.setProperty('--origin-x', `${originX.toFixed(2)}%`);
+        root.style.setProperty('--origin-y', `${originY.toFixed(2)}%`);
+
         context.save();
         context.translate(pointerX * -8, pointerY * -6);
         stars.forEach((star, index) => {
