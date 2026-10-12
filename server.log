@@ -1,0 +1,4 @@
+127.0.0.1 - - [12/Oct/2026 06:28:14] "GET /infinity.html HTTP/1.1" 200 -
+127.0.0.1 - - [12/Oct/2026 06:28:14] "GET /infinity.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Oct/2026 06:28:14] "GET /infinity.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Oct/2026 06:28:14] "GET /images/Oshama.webp HTTP/1.1" 200 -
