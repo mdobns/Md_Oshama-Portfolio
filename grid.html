@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#e9e6df">
+    <title>Infinite Canvas | Md. Oshama Bin Nur</title>
+    <meta name="description" content="Explore Md. Oshama Bin Nur's software engineering portfolio as an endless, draggable canvas. Software Engineer specializing in FastAPI backends, PostgreSQL, Flutter mobile apps, FinTech integrations, and Applied AI.">
+    <meta name="keywords" content="Md. Oshama Bin Nur, Python Developer, Software Engineer, FastAPI, Flutter, PostgreSQL, Paystation, bKash, SSLCommerz, WhatsApp API, FCM, Applied AI, Dhaka">
+    <meta name="author" content="Md. Oshama Bin Nur">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <link rel="canonical" href="https://mdobns.github.io/Md_Oshama-Portfolio/grid.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Infinite Canvas | Md. Oshama Bin Nur">
+    <meta property="og:description" content="An endless, draggable software engineering portfolio.">
+    <meta property="og:url" content="https://mdobns.github.io/Md_Oshama-Portfolio/grid.html">
+    <meta property="og:image" content="https://mdobns.github.io/Md_Oshama-Portfolio/images/Oshama.webp">
+
+    <link rel="icon" type="image/webp" href="images/github-avatar.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="grid.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Md. Oshama Bin Nur",
+      "url": "https://mdobns.github.io/Md_Oshama-Portfolio/grid.html",
+      "image": "https://mdobns.github.io/Md_Oshama-Portfolio/images/Oshama.webp",
+      "sameAs": [
+        "https://github.com/mdobns",
+        "https://www.linkedin.com/in/mdosamabinnur/"
+      ],
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Alora Cloud"
+      },
+      "description": "Software Engineer building scalable FastAPI backends, Flutter mobile apps, payment integrations, and AI systems.",
+      "knowsAbout": ["Python", "FastAPI", "Django", "Flask", "Flutter", "PostgreSQL", "Applied AI"]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#tile">Skip to portfolio cards</a>
+
+    <main class="board" id="board" aria-label="Infinite portfolio canvas. Drag, scroll, or use arrow keys to move.">
+        <div class="world" id="world">
+            <!-- One tile of cards. grid.js clones it in every direction so the board never ends. -->
+            <div class="tile" id="tile">
+                <article class="card card--ink" style="--x:15;--y:15;--w:570;--h:330;--accent:#ff8a5c" tabindex="0" data-title="Hello">
+                    <p class="card__tag">Hello, I’m</p>
+                    <h1 class="card__title card__title--xl">Md. Oshama Bin&nbsp;Nur</h1>
+                    <p>Software engineer building dependable backends, mobile products, payment flows, and applied AI.</p>
+                    <div class="card__more" hidden>
+                        <p>Based in Dhaka, Bangladesh. Currently a Python Developer at Alora Cloud, turning product needs into clear architecture, stable APIs, resilient data flows, and interfaces that feel immediate.</p>
+                    </div>
+                </article>
+
+                <article class="card card--image" style="--x:615;--y:15;--w:270;--h:420;--accent:#ff8a5c" tabindex="0" data-title="Portrait">
+                    <picture>
+                        <source srcset="images/Oshama.webp" type="image/webp">
+                        <img src="images/Oshama.png" alt="Portrait of Md. Oshama Bin Nur" width="650" height="661" loading="lazy" decoding="async" draggable="false">
+                    </picture>
+                    <p class="card__caption">Dhaka, Bangladesh</p>
+                </article>
+
+                <article class="card" style="--x:915;--y:15;--w:570;--h:440;--accent:#1f6bff" tabindex="0" data-title="Paystation and Omnichannel Engine">
+                    <p class="card__tag">Featured system · 01</p>
+                    <h2 class="card__title">Paystation &amp; Omnichannel Engine</h2>
+                    <p>An idempotent payment workflow connected to WhatsApp, email fallback, FCM deep links, and a Flutter offline outbox.</p>
+                    <ol class="card__flow" aria-label="System flow">
+                        <li>Flutter app</li><li>FastAPI</li><li>Paystation</li><li>WhatsApp + FCM</li>
+                    </ol>
+                    <a class="card__link" href="https://github.com/mdobns" target="_blank" rel="noopener">Explore on GitHub ↗</a>
+                    <div class="card__more" hidden>
+                        <p>The Flutter app queues actions in an offline-first outbox, the FastAPI core API processes them idempotently, Paystation handles payments, and delivery fans out through WhatsApp and FCM deep links with email as a fallback.</p>
+                        <p class="card__chips"><span>Flutter</span><span>Payments</span><span>Webhooks</span><span>FCM</span></p>
+                    </div>
+                </article>
+
+                <article class="card card--accent" style="--x:1515;--y:15;--w:270;--h:260;--accent:#f2a900" tabindex="0" data-title="By the numbers">
+                    <p class="card__tag">By the numbers</p>
+                    <dl class="card__stats">
+                        <div><dt>2</dt><dd>professional roles</dd></div>
+                        <div><dt>3.84</dt><dd>B.Sc. CGPA</dd></div>
+                        <div><dt>IEEE</dt><dd>co-author</dd></div>
+                    </dl>
+                </article>
+
+                <article class="card" style="--x:15;--y:375;--w:270;--h:220;--accent:#00b383" tabindex="0" data-title="Backend toolkit">
+                    <p class="card__tag">Toolkit · 01</p>
+                    <h3 class="card__title">Backend</h3>
+                    <p>Python · FastAPI · Django · Flask · REST APIs</p>
+                </article>
+
+                <article class="card" style="--x:315;--y:375;--w:270;--h:220;--accent:#00b383" tabindex="0" data-title="Data toolkit">
+                    <p class="card__tag">Toolkit · 02</p>
+                    <h3 class="card__title">Data</h3>
+                    <p>PostgreSQL · MySQL · SQLAlchemy · Redis</p>
+                </article>
+
+                <article class="card" style="--x:615;--y:465;--w:270;--h:330;--accent:#7b5cff" tabindex="0" data-title="Alora Cloud">
+                    <p class="card__tag">2026 — now</p>
+                    <p class="card__role">Python Developer</p>
+                    <h3 class="card__title">Alora Cloud</h3>
+                    <p>Scalable FastAPI services, PostgreSQL systems, and production APIs integrated with modern web applications.</p>
+                </article>
+
+                <article class="card card--accent" style="--x:915;--y:485;--w:570;--h:300;--accent:#7b5cff" tabindex="0" data-title="How I think">
+                    <p class="card__tag">How I think</p>
+                    <blockquote class="card__quote">Complexity should live inside the system, not in the user’s hands.</blockquote>
+                    <div class="card__more" hidden>
+                        <p>I translate product needs into clear architecture, stable APIs, resilient data flows, and interfaces that feel immediate.</p>
+                    </div>
+                </article>
+
+                <article class="card card--image" style="--x:1515;--y:305;--w:270;--h:500;--accent:#e8337a" tabindex="0" data-title="ShopSense on mobile">
+                    <picture>
+                        <source srcset="images/ShopSense-Screenshots/Mobile Responsive.webp" type="image/webp">
+                        <img src="images/ShopSense-Screenshots/Mobile Responsive.png" alt="ShopSense responsive mobile layout" width="392" height="850" loading="lazy" decoding="async" draggable="false">
+                    </picture>
+                    <p class="card__caption">ShopSense · mobile</p>
+                </article>
+
+                <article class="card card--image card--wide-image" style="--x:15;--y:625;--w:570;--h:400;--accent:#e8337a" tabindex="0" data-title="ShopSense">
+                    <picture>
+                        <source srcset="images/ShopSense-Screenshots/Homepage.webp" type="image/webp">
+                        <img src="images/ShopSense-Screenshots/Homepage.png" alt="ShopSense eCommerce homepage" width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+                    </picture>
+                    <div class="card__caption card__caption--block">
+                        <p class="card__tag">Featured product · 02</p>
+                        <h2 class="card__title">ShopSense</h2>
+                        <a class="card__link" href="https://github.com/mdobns/ecommerce-webapp-django-vue3" target="_blank" rel="noopener">View repository ↗</a>
+                    </div>
+                    <div class="card__more" hidden>
+                        <p>A complete eCommerce experience with product, cart, and order APIs — enhanced by AI search, recommendations, and a RAG shopping assistant.</p>
+                        <p class="card__chips"><span>Django</span><span>Vue.js</span><span>RAG</span><span>AI search</span></p>
+                    </div>
+                </article>
+
+                <article class="card" style="--x:615;--y:825;--w:270;--h:330;--accent:#f2a900" tabindex="0" data-title="Softvance">
+                    <p class="card__tag">2025</p>
+                    <p class="card__role">Frontend Developer</p>
+                    <h3 class="card__title">Softvance</h3>
+                    <p>Responsive client products shaped through direct requirement gathering and close team collaboration.</p>
+                </article>
+
+                <article class="card" style="--x:915;--y:815;--w:270;--h:220;--accent:#00b383" tabindex="0" data-title="Mobile toolkit">
+                    <p class="card__tag">Toolkit · 03</p>
+                    <h3 class="card__title">Mobile</h3>
+                    <p>Flutter · Dart · Offline sync · FCM deep links</p>
+                </article>
+
+                <article class="card" style="--x:1215;--y:815;--w:270;--h:220;--accent:#00b383" tabindex="0" data-title="Systems toolkit">
+                    <p class="card__tag">Toolkit · 04</p>
+                    <h3 class="card__title">Systems</h3>
+                    <p>Payments · Webhooks · WhatsApp · RAG · Docker</p>
+                </article>
+
+                <article class="card" style="--x:1515;--y:835;--w:270;--h:380;--accent:#3fa34d" tabindex="0" data-title="Research">
+                    <p class="card__tag">Beyond production</p>
+                    <h3 class="card__title">Engineering, measured.</h3>
+                    <p>Co-author of an IEEE-published study on cluster-head selection for wireless sensor networks using an enhanced HHGSO algorithm.</p>
+                    <a class="card__link" href="https://ieeexplore.ieee.org/document/10464490" target="_blank" rel="noopener">Read it ↗</a>
+                    <div class="card__more" hidden>
+                        <p>Also: Vice Chancellor’s &amp; Dean’s certificates · Cybersecurity program topper · CSE Project Lab team lead.</p>
+                    </div>
+                </article>
+
+                <article class="card card--ink" style="--x:15;--y:1055;--w:570;--h:300;--accent:#5ce1ff" tabindex="0" data-title="Contact">
+                    <p class="card__tag">Let’s build</p>
+                    <h2 class="card__title">Have a difficult problem? Good.</h2>
+                    <ul class="card__contacts">
+                        <li><a href="mailto:mdosamabinnur@gmail.com">mdosamabinnur@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                        <li><a href="https://github.com/mdobns" target="_blank" rel="noopener">GitHub ↗</a></li>
+                    </ul>
+                    <div class="card__more" hidden>
+                        <p>I’m interested in backend, mobile, FinTech, and AI-powered product opportunities.</p>
+                    </div>
+                </article>
+
+                <article class="card card--accent" style="--x:615;--y:1185;--w:270;--h:180;--accent:#ff5a36" tabindex="0" data-title="Résumé">
+                    <p class="card__tag">The short version</p>
+                    <a class="card__link card__link--big" href="Md_Oshama_Bin_Nur_Resume.pdf" target="_blank" rel="noopener">Open résumé ↗</a>
+                </article>
+
+                <article class="card" style="--x:915;--y:1065;--w:570;--h:290;--accent:#1f6bff" tabindex="0" data-title="Right now">
+                    <p class="card__tag"><span class="card__pulse" aria-hidden="true"></span>Right now</p>
+                    <h2 class="card__title">Building production APIs at Alora Cloud.</h2>
+                    <p>Open to backend, mobile, FinTech, and applied-AI product work.</p>
+                    <p class="card__chips"><span>FastAPI</span><span>PostgreSQL</span><span>Flutter</span><span>bKash</span><span>SSLCommerz</span></p>
+                </article>
+
+                <article class="card card--dashed" style="--x:1515;--y:1245;--w:270;--h:120;--accent:#7b5cff" tabindex="0" data-title="You have been here before">
+                    <p class="card__loop"><span aria-hidden="true">↺</span> You’ve been here before.</p>
+                    <div class="card__more" hidden>
+                        <p>This board is one tile of cards repeated forever in every direction. Keep dragging — it never ends.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <div class="spotlight" aria-hidden="true"></div>
+
+    <header class="hud hud--top">
+        <a class="brand" href="index.html" aria-label="Back to standard portfolio">
+            <span class="brand__mark">✣</span>
+            <span>Oshama<span class="brand__dot">.</span></span>
+        </a>
+        <details class="views" id="views">
+            <summary>Views</summary>
+            <ul>
+                <li><a href="index.html">Standard</a></li>
+                <li><a href="infinity.html">Infinity</a></li>
+                <li><a href="prism.html">Prism</a></li>
+                <li><a href="zoom.html">Zoom</a></li>
+                <li><a href="loop.html">Loop</a></li>
+                <li><a href="grid.html" aria-current="page">Canvas</a></li>
+            </ul>
+        </details>
+    </header>
+
+    <footer class="hud hud--bottom" aria-hidden="true">
+        <span class="hint">Drag anywhere · it never ends</span>
+        <span class="coords" id="coords">x 0 · y 0</span>
+    </footer>
+
+    <dialog class="detail" id="detail">
+        <button class="detail__close" type="button" id="detail-close" aria-label="Close">✕</button>
+        <div class="detail__body" id="detail-body"></div>
+    </dialog>
+
+    <noscript><p class="noscript">The canvas needs JavaScript to move. <a href="index.html">Open the standard portfolio.</a></p></noscript>
+    <script src="grid.js"></script>
+</body>
+</html>
