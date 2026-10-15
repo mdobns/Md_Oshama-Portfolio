@@ -1,0 +1,389 @@
+/*
+ * Shared visual polish for every portfolio view.
+ * Warm neutrals, precise mono labels, and quiet interaction motion create a
+ * terminal-adjacent feel without flattening each view's individual concept.
+ */
+:root {
+    --heading: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    --body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    --code: "IBM Plex Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+    --cc-orange: #d97757;
+    --cc-orange-dark: #b85f41;
+    --cc-charcoal: #292825;
+    --cc-cream: #f3efe7;
+    --cc-ease: cubic-bezier(.22, 1, .36, 1);
+    --wipe: 820ms;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+}
+
+body,
+button,
+a {
+    font-family: var(--body);
+    font-kerning: normal;
+}
+
+h1,
+h2,
+h3,
+.title,
+.headline,
+.statement,
+.card__title,
+.brand {
+    font-family: var(--heading);
+    font-synthesis: none;
+}
+
+.kicker,
+.eyebrow,
+.topbar__mode,
+.meter__text,
+.hint,
+.scene-name,
+.loop-signature,
+.card__eyebrow,
+.block__num,
+.timeline__date,
+.timeline__role,
+.stack-card__number,
+.window__label,
+.hud--bottom,
+.cc-button,
+.pill,
+.round-button,
+.loop-button,
+.rail__count,
+.views summary {
+    font-family: var(--code);
+}
+
+/* Claude Code-inspired controls: compact, crisp and warm rather than glossy. */
+.pill,
+.round-button,
+.cc-button {
+    position: relative;
+    min-height: 2.75rem;
+    border: 1px solid var(--cc-charcoal);
+    border-radius: .65rem;
+    background: var(--cc-charcoal);
+    color: #fffaf2;
+    box-shadow:
+        inset 3px 0 0 var(--cc-orange),
+        0 .6rem 1.4rem -.95rem rgba(35, 33, 29, .65);
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    transition:
+        transform 180ms var(--cc-ease),
+        background-color 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.pill:hover,
+.round-button:hover,
+.cc-button:hover {
+    border-color: #3a3935;
+    background: #3a3935;
+    transform: translateY(-2px);
+    box-shadow:
+        inset 3px 0 0 #e18463,
+        0 .8rem 1.5rem -1rem rgba(35, 33, 29, .72);
+}
+
+.pill:active,
+.round-button:active,
+.cc-button:active {
+    transform: translateY(0);
+    box-shadow: inset 0 1px 2px rgba(46, 25, 17, .18);
+}
+
+.pill span,
+.round-button span {
+    border-radius: .35rem;
+    background: rgba(255, 250, 242, .1);
+}
+
+.theme-dark .pill,
+.theme-dark .round-button {
+    border-color: #ded8cd;
+    background: #eee9df;
+    color: #282622;
+    box-shadow:
+        inset 3px 0 0 var(--cc-orange),
+        0 .7rem 1.6rem -1rem rgba(0, 0, 0, .8);
+}
+
+.theme-dark .pill:hover,
+.theme-dark .round-button:hover {
+    border-color: #fffaf2;
+    background: #fffaf2;
+}
+
+.theme-dark .pill span,
+.theme-dark .round-button span {
+    background: rgba(40, 38, 34, .1);
+}
+
+.cc-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    padding: .72rem 1.05rem;
+    text-decoration: none;
+}
+
+.cc-button--primary {
+    border-color: var(--cc-charcoal);
+    background: var(--cc-charcoal);
+    color: #fffaf2;
+}
+
+.cc-button--primary:hover {
+    border-color: #3a3935;
+    background: #3a3935;
+}
+
+.cc-button--secondary {
+    border-color: #d8d0c4;
+    background: #f3efe7;
+    color: var(--cc-charcoal);
+    box-shadow: 0 .6rem 1.4rem -1.1rem rgba(45, 40, 33, .45);
+}
+
+.cc-button--secondary:hover {
+    border-color: #bfb4a5;
+    background: #fffdf8;
+}
+
+.cc-button--accent {
+    border-color: #cfc5b8;
+    background: #eee9df;
+    color: var(--cc-charcoal);
+    box-shadow:
+        inset 3px 0 0 var(--cc-orange),
+        0 .6rem 1.4rem -1.1rem rgba(45, 40, 33, .45);
+}
+
+.cc-button--accent:hover {
+    border-color: #bdb2a4;
+    background: #fffaf2;
+}
+
+.link,
+.text-link,
+.project-link,
+.card__link {
+    text-underline-offset: .3em;
+    transition: color 180ms ease, border-color 180ms ease, opacity 180ms ease;
+}
+
+.views summary,
+.rail,
+.brand__mark,
+.card,
+.stack-card,
+.contacts a,
+.contact-links a {
+    transition-duration: 240ms;
+}
+
+.views summary {
+    border-radius: .55rem;
+    letter-spacing: -.02em;
+}
+
+.views ul,
+.rail {
+    border-radius: .75rem;
+}
+
+.rail__arrow,
+.detail__close {
+    border-radius: .5rem;
+    transition: transform 180ms var(--cc-ease), background-color 180ms ease;
+}
+
+.rail__arrow:hover,
+.detail__close:hover {
+    transform: translateY(-1px);
+}
+
+/* Portraits stay natural: no color wash, glow, or animated halo. */
+.portrait__frame {
+    border: 1px solid rgba(42, 40, 37, .12);
+    background: #e8e4dc;
+    box-shadow: 0 1rem 2.5rem -1.8rem rgba(20, 18, 16, .45);
+}
+
+.portrait__frame img {
+    filter: none;
+    mix-blend-mode: normal;
+}
+
+.frame--portrait {
+    border: 1px solid rgba(255, 255, 255, .16);
+    background: #171716;
+    box-shadow: 0 1rem 2.5rem -1.8rem rgba(0, 0, 0, .8);
+}
+
+.frame--portrait img,
+.portrait-ring img {
+    filter: none;
+}
+
+.frame--portrait::after {
+    display: none;
+}
+
+.portrait-ring {
+    border-color: rgba(255, 255, 255, .22);
+    box-shadow: 0 1rem 2.5rem -1.6rem rgba(0, 0, 0, .85);
+    animation: none;
+}
+
+.avatar {
+    border-color: rgba(255, 255, 255, .32);
+}
+
+/* Standard page: carry the same warm, code-oriented language into Tailwind UI. */
+body.font-inter {
+    --body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    background: #f7f4ed;
+}
+
+.font-inter .hero-grid {
+    background-color: #f3efe7;
+    background-image:
+        linear-gradient(rgba(108, 91, 72, .055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(108, 91, 72, .055) 1px, transparent 1px),
+        radial-gradient(circle at 85% 20%, rgba(217, 119, 87, .14), transparent 34%);
+}
+
+.font-inter .text-blue-600,
+.font-inter .text-blue-700,
+.font-inter .hover\:text-blue-600:hover,
+.font-inter .hover\:text-blue-700:hover,
+.font-inter .hover\:text-blue-800:hover,
+.font-inter .group:hover .group-hover\:text-blue-800 {
+    color: var(--cc-orange-dark) !important;
+}
+
+.font-inter .bg-blue-50 {
+    background-color: #f8eee8 !important;
+}
+
+.font-inter .border-blue-200,
+.font-inter .border-blue-300,
+.font-inter .hover\:border-blue-400:hover,
+.font-inter .hover\:border-blue-600:hover {
+    border-color: #dfb09e !important;
+}
+
+.font-inter .connector-flow {
+    --connector-track: rgba(184, 95, 65, .22);
+    --connector-node: var(--cc-orange);
+}
+
+.font-inter .connector-dark {
+    --connector-track: rgba(225, 132, 99, .3);
+    --connector-node: #e18463;
+}
+
+.font-inter .connector-flow::after {
+    opacity: 0;
+    box-shadow: none;
+    animation-duration: 5.5s;
+}
+
+.font-inter .connector-flow.is-visible::after {
+    opacity: .58;
+}
+
+.font-inter .connector-node::before {
+    box-shadow: 0 0 0 3px var(--connector-track);
+}
+
+/* Keep component tones authoritative over the legacy utility palette. */
+.font-inter .cc-button--primary,
+.font-inter .cc-button--primary:hover {
+    border-color: var(--cc-charcoal) !important;
+    background: var(--cc-charcoal) !important;
+    color: #fffaf2 !important;
+}
+
+.font-inter .cc-button--secondary,
+.font-inter .cc-button--secondary:hover {
+    border-color: #d8d0c4 !important;
+    background: rgba(255, 253, 248, .92) !important;
+    color: var(--cc-charcoal) !important;
+}
+
+.font-inter .cc-button--accent,
+.font-inter .cc-button--accent:hover {
+    border-color: #cfc5b8 !important;
+    background: #eee9df !important;
+    color: var(--cc-charcoal) !important;
+}
+
+/* Quieter perpetual motion while keeping the identity of every experimental view. */
+.sticker { animation-duration: 7s; }
+.cue span { animation-duration: 2.8s; }
+.ambient__orb--one { animation-duration: 28s; }
+.ambient__orb--two { animation-duration: 34s; }
+.portrait-ring { animation-duration: 7s; }
+.system-map::before,
+.research-art::after { animation-duration: 45s; }
+.system-line { animation-duration: 3.8s; }
+.scroll-cue i::after { animation-duration: 2.8s; }
+.card__pulse { animation-duration: 3.4s; }
+.card__loop span { animation-duration: 18s; }
+
+.stack-card:hover {
+    transform: translateY(-.2rem);
+}
+
+.card:hover {
+    scale: 1.012;
+}
+
+@keyframes bob {
+    50% { transform: translateY(-.22rem) rotate(-1deg); }
+}
+
+@keyframes nudge {
+    50% { transform: translateY(.14rem); }
+}
+
+@keyframes hint-pulse {
+    50% { opacity: .55; transform: scale(.84); }
+}
+
+@keyframes node-drift {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(0, -.25rem, 0); }
+}
+
+@keyframes pulse {
+    70% { box-shadow: 0 0 0 .38em transparent; }
+    100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto !important; }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
+

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Oshama Bin Nur | Software Engineer · FastAPI, Flutter &amp; Applied AI</title>
-    <meta name="description" content="Portfolio of Md. Oshama Bin Nur — Software Engineer specializing in scalable FastAPI backends, PostgreSQL, Flutter mobile applications, FinTech integrations, and Applied AI.">
-    <meta name="keywords" content="Md. Oshama Bin Nur, Python Developer, Software Engineer, FastAPI, Flutter, PostgreSQL, Paystation, bKash, SSLCommerz, Evolution API, WhatsApp API, FCM, Applied AI, Dhaka">
+    <title>Md. Oshama Bin Nur | Software Engineer · FastAPI, Next.js, Flutter &amp; Applied AI</title>
+    <meta name="description" content="Portfolio of Md. Oshama Bin Nur — Software Engineer specializing in scalable FastAPI backends, Next.js frontends, Flutter mobile applications, FinTech integrations, and Applied AI.">
+    <meta name="keywords" content="Md. Oshama Bin Nur, Python Developer, Software Engineer, FastAPI, Next.js, Flutter, PostgreSQL, Paystation, bKash, SSLCommerz, Evolution API, WhatsApp API, FCM, Applied AI, Dhaka">
     <meta name="author" content="Md. Oshama Bin Nur">
     
     <!-- Robots & Search Engine Directives -->
@@ -19,7 +19,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mdobns.github.io/Md_Oshama-Portfolio/">
     <meta property="og:title" content="Md. Oshama Bin Nur | Software Engineer">
-    <meta property="og:description" content="Software Engineer building scalable FastAPI backends, Flutter mobile apps, payment integrations (Paystation, bKash, Stripe), and AI systems.">
+    <meta property="og:description" content="Software Engineer building scalable FastAPI backends, Next.js frontends, Flutter mobile apps, payment integrations, and AI systems.">
     <meta property="og:image" content="https://mdobns.github.io/Md_Oshama-Portfolio/images/Oshama.webp">
     <meta property="og:image:alt" content="Portrait of Md. Oshama Bin Nur">
     <meta property="og:site_name" content="Md. Oshama Bin Nur Portfolio">
@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://mdobns.github.io/Md_Oshama-Portfolio/">
     <meta name="twitter:title" content="Md. Oshama Bin Nur | Software Engineer">
-    <meta name="twitter:description" content="Software Engineer building scalable FastAPI backends, Flutter mobile apps, payment integrations, and AI systems.">
+    <meta name="twitter:description" content="Software Engineer building scalable FastAPI backends, Next.js frontends, Flutter mobile apps, payment integrations, and AI systems.">
     <meta name="twitter:image" content="https://mdobns.github.io/Md_Oshama-Portfolio/images/Oshama.webp">
     <meta name="twitter:image:alt" content="Portrait of Md. Oshama Bin Nur">
 
@@ -43,7 +43,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="image" href="images/Oshama.webp" type="image/webp">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     
     <!-- Stylesheets & Scripts -->
     <link rel="stylesheet" href="easter-eggs.css">
@@ -78,6 +78,7 @@
           "knowsAbout": [
             "Python",
             "FastAPI",
+            "Next.js",
             "Flutter",
             "Dart",
             "PostgreSQL",
@@ -143,7 +144,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { inter: ['Inter', 'sans-serif'] },
+                    fontFamily: { inter: ['IBM Plex Sans', 'sans-serif'] },
                     colors: { ink: '#0f172a', accent: '#2563eb' }
                 }
             }
@@ -346,6 +347,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="claude-code.css">
 </head>
 <body class="font-inter bg-slate-50 text-slate-900 antialiased">
     <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl">
@@ -357,9 +359,9 @@
                 <a href="#projects" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Projects</a>
                 <a href="#education" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Education</a>
                 <a href="#contact" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Contact</a>
-                <a href="infinity.html" class="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 transition hover:border-blue-600 hover:bg-blue-600 hover:text-white">∞ Infinity view</a>
-                <a href="prism.html" class="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 transition hover:border-blue-600 hover:bg-blue-600 hover:text-white">◆ Prism view</a>
-                <a href="Md_Oshama_Bin_Nur_Resume.pdf" target="_blank" rel="noopener" class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-600">View résumé</a>
+                <a href="infinity.html" class="cc-button cc-button--secondary rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 transition hover:border-blue-600 hover:bg-blue-600 hover:text-white">∞ Infinity view</a>
+                <a href="prism.html" class="cc-button cc-button--secondary rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 transition hover:border-blue-600 hover:bg-blue-600 hover:text-white">◆ Prism view</a>
+                <a href="Md_Oshama_Bin_Nur_Resume.pdf" target="_blank" rel="noopener" class="cc-button cc-button--primary rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-600">View résumé</a>
             </div>
             <button id="mobile-menu-button" type="button" class="rounded-lg p-2 text-slate-700 hover:bg-slate-100 lg:hidden" aria-label="Open navigation" aria-expanded="false">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -377,7 +379,7 @@
                 <a href="zoom.html" class="rounded-lg bg-blue-50 px-3 py-2 font-semibold text-blue-700">Infinite Zoom</a>
                 <a href="loop.html" class="rounded-lg bg-blue-50 px-3 py-2 font-semibold text-blue-700">Endless Scroll</a>
                 <a href="grid.html" class="rounded-lg bg-blue-50 px-3 py-2 font-semibold text-blue-700">Infinite Canvas</a>
-                <a href="Md_Oshama_Bin_Nur_Resume.pdf" target="_blank" rel="noopener" class="mt-2 rounded-lg bg-ink px-3 py-2 text-center font-semibold text-white">View résumé</a>
+                <a href="Md_Oshama_Bin_Nur_Resume.pdf" target="_blank" rel="noopener" class="cc-button cc-button--primary mt-2 rounded-lg bg-ink px-3 py-2 text-center font-semibold text-white">View résumé</a>
             </div>
         </div>
     </header>
@@ -388,24 +390,24 @@
                 <div class="order-2 md:order-1">
                     <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
                         <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
-                        Backend & Mobile Engineer · Dhaka, Bangladesh
+                        Software Engineer · Dhaka, Bangladesh
                     </div>
                     <h1 class="max-w-4xl text-5xl font-extrabold leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl">
-                        Building reliable backends & <span class="text-blue-600">mobile products.</span>
+                        Building reliable backends, <span class="text-blue-600">web & mobile products.</span>
                     </h1>
                     <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-                        I’m Md. Oshama Bin Nur, a Software Engineer experienced in FastAPI, PostgreSQL, Flutter, payment gateways (Paystation, bKash, SSLCommerz, Stripe), omnichannel messaging (WhatsApp & FCM), and offline sync.
+                        I’m Md. Oshama Bin Nur, a Software Engineer experienced in FastAPI, Next.js, PostgreSQL, Flutter, payment gateways (Paystation, bKash, SSLCommerz, Stripe), omnichannel messaging (WhatsApp & FCM), and offline sync.
                     </p>
                     <div class="mt-8 flex flex-wrap gap-3">
-                        <a href="#projects" class="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700">
+                        <a href="#projects" class="cc-button cc-button--primary inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700">
                             Explore my work
                             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0-4 4m4-4H3"/></svg>
                         </a>
-                        <a href="Md_Oshama_Bin_Nur_Resume.pdf" download class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-800 transition hover:border-blue-300 hover:text-blue-700">
+                        <a href="Md_Oshama_Bin_Nur_Resume.pdf" download class="cc-button cc-button--secondary inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-800 transition hover:border-blue-300 hover:text-blue-700">
                             Download CV
                             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-4-4m4 4 4-4M5 20h14"/></svg>
                         </a>
-                        <a href="infinity.html" class="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-6 py-3 font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-600 hover:bg-blue-600 hover:text-white">
+                        <a href="infinity.html" class="cc-button cc-button--accent inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-6 py-3 font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-600 hover:bg-blue-600 hover:text-white">
                             <span aria-hidden="true">∞</span> Enter Infinity View
                         </a>
                     </div>
@@ -417,8 +419,7 @@
                 </div>
                 <div class="order-1 flex justify-center md:order-2 md:justify-end">
                     <div class="relative">
-                        <div class="absolute -inset-5 rounded-[2.5rem] bg-gradient-to-br from-blue-500 to-indigo-600 opacity-20 blur-2xl"></div>
-                        <div class="relative overflow-hidden rounded-[2.5rem] border-8 border-white bg-white shadow-2xl">
+                        <div class="relative overflow-hidden rounded-[2.5rem] border border-stone-200 bg-white shadow-lg">
                             <picture>
                                 <source srcset="images/Oshama.webp" type="image/webp">
                                 <img src="images/Oshama.png" alt="Portrait of Md. Oshama Bin Nur - Software Engineer" width="650" height="661" fetchpriority="high" decoding="async" class="h-72 w-72 object-cover sm:h-96 sm:w-96">
@@ -426,7 +427,7 @@
                         </div>
                         <div class="absolute -bottom-5 -left-5 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-xl">
                             <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Core stack</p>
-                            <p class="mt-1 font-bold text-ink">FastAPI · Flutter · FinTech · AI</p>
+                            <p class="mt-1 font-bold text-ink">FastAPI · Next.js · Flutter · AI</p>
                         </div>
                     </div>
                 </div>
@@ -437,10 +438,9 @@
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
                     <div class="relative mx-auto max-w-sm lg:mx-0">
-                        <div class="absolute -inset-4 rounded-3xl bg-indigo-100"></div>
                         <picture>
                             <source srcset="images/Oshama2.webp" type="image/webp">
-                            <img src="images/Oshama2.png" alt="Md. Oshama Bin Nur - Backend and Mobile Developer" width="1008" height="1012" loading="lazy" decoding="async" class="relative aspect-square w-full rounded-3xl object-cover shadow-xl">
+                            <img src="images/Oshama2.png" alt="Md. Oshama Bin Nur - Backend and Mobile Developer" width="1008" height="1012" loading="lazy" decoding="async" class="relative aspect-square w-full rounded-3xl border border-stone-200 object-cover shadow-sm">
                         </picture>
                     </div>
                     <div>
@@ -458,7 +458,7 @@
                 </div>
 
                 <div class="connector-flow connector-row flow-xl mt-16 grid gap-6 xl:grid-cols-4">
-                    <article class="connector-node rounded-2xl border border-slate-200 bg-white p-6"><h3 class="font-bold text-ink">Languages & Mobile</h3><p class="mt-3 leading-7 text-slate-600">Python, Dart, Flutter, JavaScript, SQL, C</p></article>
+                    <article class="connector-node rounded-2xl border border-slate-200 bg-white p-6"><h3 class="font-bold text-ink">Frontend & Mobile</h3><p class="mt-3 leading-7 text-slate-600">Next.js, JavaScript, Dart, Flutter, Offline Sync, FCM</p></article>
                     <article class="connector-node rounded-2xl border border-slate-200 bg-white p-6"><h3 class="font-bold text-ink">Backend & Data</h3><p class="mt-3 leading-7 text-slate-600">FastAPI, Django, Flask, PostgreSQL, MySQL, SQLAlchemy, Redis</p></article>
                     <article class="connector-node rounded-2xl border border-slate-200 bg-white p-6"><h3 class="font-bold text-ink">FinTech & Systems</h3><p class="mt-3 leading-7 text-slate-600">Paystation, bKash, SSLCommerz, Stripe, Offline Sync, REST APIs</p></article>
                     <article class="connector-node rounded-2xl border border-slate-200 bg-white p-6"><h3 class="font-bold text-ink">Realtime & AI</h3><p class="mt-3 leading-7 text-slate-600">FCM Push, WhatsApp (Evolution API), RAG, Docker, Webhooks</p></article>
@@ -482,7 +482,7 @@
                         </div>
                         <ul class="grid gap-4 text-slate-300 sm:grid-cols-2">
                             <li class="rounded-2xl bg-slate-800/70 p-4">Develop and maintain scalable backend services with Python and FastAPI.</li>
-                            <li class="rounded-2xl bg-slate-800/70 p-4">Design production REST APIs and integrate them with Next.js applications.</li>
+                            <li class="rounded-2xl bg-slate-800/70 p-4">Build and maintain Alora Cloud’s frontend applications in Next.js, integrated with FastAPI REST APIs.</li>
                             <li class="rounded-2xl bg-slate-800/70 p-4">Model and optimize data using PostgreSQL and SQLAlchemy.</li>
                             <li class="rounded-2xl bg-slate-800/70 p-4">Build donation, campaign, and contributor features while improving backend reliability.</li>
                         </ul>
@@ -585,10 +585,10 @@
                 <h2 class="mt-2 text-4xl font-bold tracking-tight text-ink sm:text-6xl">Have a backend challenge?</h2>
                 <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">I’m interested in Python, backend engineering, and AI-powered product opportunities. Tell me what you’re building.</p>
                 <div class="mt-9 flex flex-wrap justify-center gap-3">
-                    <a href="mailto:mdosamabinnur@gmail.com" class="rounded-full bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700">Email me</a>
-                    <a href="https://wa.me/8801722621560?text=Hi%20Oshama,%20I%20saw%20your%20portfolio" target="_blank" rel="noopener" class="rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-800 transition hover:border-emerald-500 hover:text-emerald-600">WhatsApp</a>
-                    <a href="tel:+8801722621560" class="rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-800 transition hover:border-blue-400 hover:text-blue-700">+88 01722-621560</a>
-                    <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" rel="noopener" class="rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-800 transition hover:border-blue-400 hover:text-blue-700">LinkedIn</a>
+                    <a href="mailto:mdosamabinnur@gmail.com" class="cc-button cc-button--primary rounded-full bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700">Email me</a>
+                    <a href="https://wa.me/8801722621560?text=Hi%20Oshama,%20I%20saw%20your%20portfolio" target="_blank" rel="noopener" class="cc-button cc-button--secondary rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-800 transition hover:border-emerald-500 hover:text-emerald-600">WhatsApp</a>
+                    <a href="tel:+8801722621560" class="cc-button cc-button--secondary rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-800 transition hover:border-blue-400 hover:text-blue-700">+88 01722-621560</a>
+                    <a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" rel="noopener" class="cc-button cc-button--secondary rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-800 transition hover:border-blue-400 hover:text-blue-700">LinkedIn</a>
                 </div>
             </div>
         </section>
@@ -596,7 +596,7 @@
 
     <footer class="bg-ink py-10 text-slate-400">
         <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-4 text-center sm:px-6 md:flex-row md:text-left lg:px-8">
-            <div><p class="font-bold text-white">Md. Oshama Bin Nur</p><p class="mt-1 text-sm">Backend & Mobile Engineer · FastAPI · Flutter · FinTech</p></div>
+            <div><p class="font-bold text-white">Md. Oshama Bin Nur</p><p class="mt-1 text-sm">Software Engineer · FastAPI · Next.js · Flutter</p></div>
             <div class="flex flex-wrap justify-center gap-5 text-sm font-medium"><a href="https://github.com/mdobns" target="_blank" rel="noopener" class="hover:text-white">GitHub</a><a href="https://www.linkedin.com/in/mdosamabinnur/" target="_blank" rel="noopener" class="hover:text-white">LinkedIn</a><a href="https://wa.me/8801722621560" target="_blank" rel="noopener" class="hover:text-white">WhatsApp</a><a href="mailto:mdobns@hotmail.com" class="hover:text-white">Email</a><a href="infinity.html" class="hover:text-white">Infinity view</a><a href="prism.html" class="hover:text-white">Prism view</a><a href="zoom.html" class="hover:text-white">Infinite Zoom</a><a href="loop.html" class="hover:text-white">Endless Scroll</a><a href="grid.html" class="hover:text-white">Infinite Canvas</a><a href="sitemap.xml" class="hover:text-white">Sitemap</a><a href="Md_Oshama_Bin_Nur_Resume.pdf" target="_blank" rel="noopener" class="hover:text-white">Résumé</a></div>
             <p class="text-sm">© <span id="year">2026</span> All rights reserved.</p>
             <button id="terminal-launcher" class="dev-launcher" type="button" aria-haspopup="dialog" aria-controls="dev-terminal" aria-label="Open developer terminal" title="Developer terminal · press ~" hidden>&lt;/&gt;</button>
